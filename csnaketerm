@@ -276,7 +276,7 @@ function parseMaze(maze) {
     throw new TypeError('parseMaze(maze): Expected \'maze\' to be a string')
   let result = maze.split`\n`
     .map(row => row.split``
-      .map(cell => cell === '*' ?
+      .map(cell => cell === '⚪' ?
           CELL_FOOD :
         cell === '#' ?
           CELL_WALL :
@@ -315,7 +315,7 @@ function displayMaze(maze) {
         '#' :
       cell === CELL_SNAKE ?
         '#' :
-        '*')
+        '⚪')
       .join``)
     .join`\n`
 }
