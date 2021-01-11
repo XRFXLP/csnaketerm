@@ -314,7 +314,7 @@ function displayMaze(maze) {
       cell === CELL_WALL ?
         '#' :
       cell === CELL_SNAKE ?
-        '🟥' :
+        '#' :
         '*')
       .join``)
     .join`\n`
